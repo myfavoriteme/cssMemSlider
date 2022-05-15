@@ -1,0 +1,22 @@
+.body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+.wrapper{
+    
+}
+.images{
+
+}
+.image{
+    height: 400px;
+    width: 650px;
+}
