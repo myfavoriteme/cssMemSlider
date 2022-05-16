@@ -1,6 +1,7 @@
 .body{
     margin: 0;
     height: 100%;
+<<<<<<< Updated upstream
     width: 100%;
     display: flex;
 }
@@ -20,3 +21,31 @@
     height: 400px;
     width: 650px;
 }
+=======
+    display: flex;
+}
+.main{
+    overflow: hidden;
+    margin: 250px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    /* width: 100%; */
+    background-color: rgba(235, 211, 140, 0.329);
+}
+.wrapper{
+    overflow: hidden;
+}
+.images{
+    height: 450px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    }
+.image{
+    border: solid black 5px;
+    height: 400px;
+    width: 650px;
+    background-color: bisque;
+}
+>>>>>>> Stashed changes
