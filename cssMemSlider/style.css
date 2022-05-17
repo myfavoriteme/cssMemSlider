@@ -1,51 +1,116 @@
+.page{
+    height: 100%;
+}
 .body{
-    margin: 0;
-    height: 100%;
-<<<<<<< Updated upstream
-    width: 100%;
+    font-size: 10px;
     display: flex;
-}
-.main{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-}
-.wrapper{
-    
-}
-.images{
-
-}
-.image{
-    height: 400px;
-    width: 650px;
-}
-=======
-    display: flex;
-}
-.main{
-    overflow: hidden;
-    margin: 250px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 100%;
-    /* width: 100%; */
+    min-height: 100%;
+    margin: 0;
     background-color: rgba(235, 211, 140, 0.329);
 }
-.wrapper{
-    overflow: hidden;
-}
+
 .images{
-    height: 450px;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    }
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 65vh;
+}
 .image{
-    border: solid black 5px;
     height: 400px;
     width: 650px;
-    background-color: bisque;
 }
->>>>>>> Stashed changes
+
+.main{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    
+}
+
+.wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper__content{
+
+}
+.input{
+    visibility: hidden;
+    margin: 0;
+}
+.slider{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slider__item{
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0 2rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.slider__img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+.text-wrapper{
+    overflow: hidden;
+}
+.text{
+    display: flex;
+    align-items: center;
+    width: 500%;
+}
+.text__item{
+    width: 20%;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.control__button{
+    box-sizing: border-box;
+    width: 1.2rem;
+    height: 1.2rem;
+    /* background-color: #310062; */
+    border: 0.2rem solid #0f011d;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+#slide1:checked ~ .slider .slide_1,
+#slide1:checked ~ .nav .text1{
+    margin-left: 0;
+}
+
+#slide1:checked ~ .nav .control[for=slide1] .control__button{
+    background-color: transparent;
+}

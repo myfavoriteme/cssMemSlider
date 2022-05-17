@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +10,57 @@
 <body class="body">
     <main class="main">
         <article class="wrapper">
-            <div class="images">
-                <div class="image image1"></div>
-                <div class="image image2"></div>
-                <div class="image image3"></div>
-                <div class="image image4"></div>
-                <div class="image image5"></div>
-            </div>
-            <div class='text'>
-                <div class="text__item item1"></div>
-                <div class="text__item item2"></div>
-                <div class="text__item item3"></div>
-                <div class="text__item item4"></div>
-                <div class="text__item item5"></div>
-            </div>
-            <div class="controls">
-                <label for="image1"></label>
-                <label for="image2"></label>
-                <label for="image3"></label>
-                <label for="image4"></label>
-                <label for="image5"></label>
+            <div class="wrapper__content">
+
+                <input class="input" type= "radio" name="slide" id="slide1">
+                <input type="radio" class="input" name="slide" id="slide2">
+                <input type="radio" class="input" name="slide" id="slide3">
+                <input type="radio" class="input" name="slide" id="slide4">
+                <input type="radio" class="input" name="slide" id="slide5">
+                <div class="slider">    
+                    <div class="slider__item slide_1">
+                        <img class="slider__img" src="/cssMemSlider/asserts/bird.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="/cssMemSlider/asserts/bird.jpg">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/cssMemSlider/asserts/bird.jpg" class="slider__img">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/cssMemSlider/asserts/bird.jpg" class="slider__img">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/cssMemSlider/asserts/bird.jpg" class="slider__img">
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class='text-wrapper'>
+                        <div class="text">
+                            <p class="text__item text1"></p>
+                            <p class="text__item"></p>
+                            <p class="text__item"></p>
+                            <p class="text__item"></p>
+                            <p class="text__item"></p>
+                        </div>
+                    <div class="controls">
+                        <label for="slide1" class="control">
+                            <div class="control__button"></div>
+                        </label>
+                        <label for="slide2" class="control">
+                            <div class="control__button"></div>
+                        </label>
+                        <label for="slide3" class="control">
+                            <div class="control__button"></div>
+                        </label>
+                        <label for="slide4" class="control">
+                            <div class="control__button"></div>
+                        </label>
+                        <label for="slide5" class="control">
+                            <div class="control__button"></div>
+                        </label>
+                    </div>
+                </div>
             </div>
         </article>
 
