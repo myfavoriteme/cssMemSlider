@@ -54,7 +54,7 @@
     width: 20%;
     padding: 0 2rem;
     text-align: center;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .slider__img{
     width: 100%;
@@ -100,7 +100,7 @@
     box-sizing: border-box;
     width: 1.2rem;
     height: 1.2rem;
-    /* background-color: #310062; */
+    background-color: #310062;
     border: 0.2rem solid #0f011d;
     border-radius: 50%;
     transition: all 0.5s ease;
@@ -110,7 +110,28 @@
 #slide1:checked ~ .nav .text1{
     margin-left: 0;
 }
+#slide2:checked ~ .slider .slide_1,
+#slide2:checked ~ .nav .text1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .slider .slide_1,
+#slide3:checked ~ .nav .text1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .slider .slide_1,
+#slide4:checked ~ .nav .text1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .slider .slide_1,
+#slide5:checked ~ .nav .text1{
+    margin-left: -80%;
+}
 
-#slide1:checked ~ .nav .control[for=slide1] .control__button{
+
+#slide1:checked ~ .nav .control[for=slide1] .control__button,
+#slide2:checked ~ .nav .control[for=slide2] .control__button,
+#slide3:checked ~ .nav .control[for=slide3] .control__button,
+#slide4:checked ~ .nav .control[for=slide4] .control__button,
+#slide5:checked ~ .nav .control[for=slide5] .control__button{
     background-color: transparent;
 }
