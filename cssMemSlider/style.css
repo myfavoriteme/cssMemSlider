@@ -100,8 +100,8 @@
     box-sizing: border-box;
     width: 1.2rem;
     height: 1.2rem;
-    background-color: #310062;
-    border: 0.2rem solid #0f011d;
+    background-color: #dab92a;
+    border: 0.2rem solid #dab92a;
     border-radius: 50%;
     transition: all 0.5s ease;
 }
