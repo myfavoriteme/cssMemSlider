@@ -8,7 +8,7 @@
     justify-content: center;
     min-height: 100%;
     margin: 0;
-    background-color: rgba(235, 211, 140, 0.329);
+    background-color: rgba(104, 175, 216, 0.342);
 }
 
 .images{
@@ -67,9 +67,10 @@
     align-items: center;
     gap: 2rem;
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 .text-wrapper{
+    flex-direction: row;
     overflow: hidden;
 }
 .text{
@@ -79,8 +80,8 @@
 }
 .text__item{
     width: 20%;
-    font-size: 1.5rem;
-    transition: all 0.5s ease;
+    font-size: 1.8rem;
+    transition: all 0.7s ease;
 }
 .controls{
     display: flex;
@@ -94,14 +95,14 @@
     width: 2.2rem;
     height: 2.2rem;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 .control__button{
     box-sizing: border-box;
     width: 1.2rem;
     height: 1.2rem;
-    background-color: #dab92a;
-    border: 0.2rem solid #dab92a;
+    background-color: #4ba6e2;
+    border: 0.2rem solid #4ba6e2;
     border-radius: 50%;
     transition: all 0.5s ease;
 }
